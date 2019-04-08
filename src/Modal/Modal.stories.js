@@ -143,6 +143,27 @@ storiesOf("Modal", module)
     },
   )
   .add(
+    "Without section 2",
+    () => {
+      return (
+        <Modal onClose={action("onClose")}>
+          <ModalHeader
+            title="Enjoy something to eat while you fly"
+            illustration={<Illustration name="Meal" size="small" />}
+            description="Select a flight below to see the menu (where available)"
+          />
+          <ModalFooter flex="1 1 100%">
+            <Button block>Proceed</Button>
+          </ModalFooter>
+        </Modal>
+      );
+    },
+    {
+      info:
+        "You can try all possible configurations of this component. However, check Orbit.Kiwi for more detailed design guidelines.",
+    },
+  )
+  .add(
     "Removable sections",
     () => {
       const showMore = boolean(false);

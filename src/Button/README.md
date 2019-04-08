@@ -12,6 +12,8 @@ Table below contains all types of the props available in Button component.
 
 | Name          | Type                              | Default         | Description                      |
 | :------------ | :-------------------------------- | :-------------- | :------------------------------- |
+| ariaControls  | `string`                          |                 | Id of the element the button controls.
+| ariaExpanded  | `boolean`                         |                 | Tells screen reader the controlled element from `ariaControls` is expanded
 | block         | `boolean`                         | `false`         | If `true`, the Button will grow up to the full width of its container.
 | bordered      | `boolean`                         | `false`         | If `true`, the Button will have a lighter version, with border and light background.
 | circled       | `boolean`                         | `false`         | If `true`, the Button will have circular shape.
@@ -30,10 +32,9 @@ Table below contains all types of the props available in Button component.
 | **size**      | [`enum`](#enum)                   | `"normal"`      | The size of the Button.
 | spaceAfter    | `enum`                            |                 | Additional `margin-bottom` after component. [See this docs](https://github.com/kiwicom/orbit-components/tree/master/src/common/getSpacingToken)
 | submit        | `boolean`                         | `false`         | If `true`, the Button will have `type="submit"` attribute, otherwise `type="button"`.
+| tabIndex      | `string`                          |                 | Specifies the tab order of an element
 | **type**      | [`enum`](#enum)                   | `"primary"`     | The type of Button.
 | width         | `number`                          | `0`             | The width of the Button. Number is defined in `px`.
-| ariaControls  | `string`                          |                 | Id of the element the button controls.
-| ariaExpanded  | `boolean`                         |                 | Tells screen reader the controlled element from `ariaControls` is expanded
 
 ### enum
 
